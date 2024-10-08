@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>StyleMe</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="styleme-topbar.css">
+ <link rel="stylesheet" href="styleme.css">
+</head>
+<body>
+  <!--                                         navigation bar                           -->
+ <div class="search-wrapper">
+    <input class="input-group search-style" type="search"  id="search" placeholder="Search...">
+    <button class="search-btn" onclick="performSearch();">
+
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="30" viewBox="0 0 50 50">
+        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+        </svg>
+
+    </button>
+  </div>
+
+  <!--login butt-->
+  <button onclick="document.getElementById('id01').style.display='block'" class="login-but"></button>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+  <form class="modal-content animate">
+    <div class="container">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  <!--end of loginbutt-->
+  
+  <!--Shopping cart-->
+  <button class="shopping-but" onclick="window.location.href='styleme-cart.html'"></button>
+  <!--Shopping cart end-->
+
+  <a href="styleme.html" class="styleMe-title">
+    <h1>StyleMe</h1>
+  </a>
+ <nav class="nav-menu">
+    <ul>
+      <li><a href="styleme-shop.html">SHOP</a></li>
+      <li><a href="styleme-about.html">ABOUT</a></li>
+      <li><a href="styleme-contact.html">CONTACT</a></li>
+    </ul>
+ </nav>
+ <div class="styleme-mystbox">
+  <span class="line"></span>
+  Aesthetic Clothes Mystery Box 
+  <span class="line"></span>
+ </div>
+
+  <!--                                         navigation bar end                                -->
+
+ <!-- slides -->
+ <div id="carouselExampleControls" class="carousel slide container-xxl " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Artboard 1.4.png" class="d-block w-100 slide-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Artboard 1.3.1.png" class="d-block w-100 slide-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="403421978_1104536403821881_6093583867810317348_n.png" class="d-block w-100 slide-img" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ <!-- slides end -->
+
+ <div class="styleme-mystbox">
+  <span class="line"></span>
+  Featured Items
+  <span class="line"></span>
+ </div>
+
+ <!--products-->
+ <div class="products-container">
+  <div class="product">
+    <a href="lightAcademia001.html" class="product-desc">
+      <img src="lightAcademia.webp">
+      <h3>Light Academia</h3>
+    </a>
+    <button class="add-but" onclick="addToCart('lightAcademia.webp', 'Light Academia', 'lightAcademia001.html');">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <a href="darkAcademia002.html" class="product-desc">
+      <img src="darcacademia.webp">
+      <h3>Dark Academia</h3>
+    </a>
+    <button class="add-but" onclick="addToCart('darcacademia.webp', 'Dark Academia', 'darkAcademia002.html');">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <a href="softGirl003.html" class="product-desc">
+      <img src="softgirl.webp">
+      <h3>Soft girl</h3>
+    </a>
+    <button class="add-but" onclick="addToCart('softgirl.webp', 'Soft Girl', 'softGirl003.html');">Add to Cart</button>
+  </div>
+</div>
+<!--products end-->
+
+<div class="button-container">
+  <button class="shopall-but" onclick="window.location.href='styleme-shop.html'">Shop All</button>
+</div>
+
+<!--                                         foot bar                                    -->
+<footer class="footer">
+  <div class="footer-content">StyleMe</div>
+</footer>
+<!--                                         foot bar end                                -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="styleme.js"></script>
+</body>
+</html>

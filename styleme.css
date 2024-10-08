@@ -1,0 +1,41 @@
+
+  .slide-img {
+    height: 500px;
+  }
+
+ .products-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+.product {
+  text-align: center;
+  margin-top: 50px;
+  }
+
+.product img {
+  width: 200px;
+  height: 220px;
+  }
+
+.product h3 {
+  margin: 10px 0;
+  }
+
+.button-container{
+  text-align: center;
+  margin-top: 70px;
+  padding: 30px 30px;
+  }
+
+.shopall-but{
+  border-radius: 7px 7px;
+  padding: 7px 40px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.shopall-but:hover{
+  background-color: rgb(154, 146, 128);
+  border: rgb(154, 146, 128);
+}

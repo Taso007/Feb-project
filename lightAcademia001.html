@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>StyleMe</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="styleme-topbar.css">
+ <link rel="stylesheet" href="product.css">
+</head>
+<body>
+ <div class="search-wrapper">
+    <input class="search-style" type="search" id="search" placeholder="Search...">
+    <button class="search-btn">
+
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="30" viewBox="0 0 50 50">
+        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+        </svg>
+
+    </button>
+  </div>
+
+  <!--login butt-->
+  <button onclick="document.getElementById('id01').style.display='block'" class="login-but"></button>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+  <form class="modal-content animate">
+    <div class="container">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  <!--end of loginbutt-->
+  
+ <!--Shopping cart-->
+ <button class="shopping-but" onclick="window.location.href='styleme-cart.html'"></button>
+ <!--Shopping cart end-->
+
+  <a href="styleme.html" class="styleMe-title">
+    <h1>StyleMe</h1>
+  </a>
+ <nav class="nav-menu">
+    <ul>
+      <li><a href="styleme-shop.html">SHOP</a></li>
+      <li><a href="styleme-about.html">ABOUT</a></li>
+      <li><a href="styleme-contact.html">CONTACT</a></li>
+    </ul>
+ </nav>
+ <div class="styleme-mystbox">
+  <span class="line"></span>
+  Home/ SHOP / light academia Mystery box
+  <span class="line"></span>
+ </div>
+
+ <!--product001-->
+ <div class="product-details">
+  <div class="product-info">
+    <img src="lightAcademia.webp">
+  </div>
+
+  <div class="product-description">
+    <p class="name">Light Academia Mystery Box</p>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Select Size
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="#">s</a></li>
+        <li><a class="dropdown-item" href="#">m</a></li>
+        <li><a class="dropdown-item" href="#">l</a></li>
+      </ul>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Select Season
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="#">spring</a></li>
+        <li><a class="dropdown-item" href="#">summer</a></li>
+        <li><a class="dropdown-item" href="#">fall</a></li>
+        <li><a class="dropdown-item" href="#">winter</a></li>
+      </ul>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Select price
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="#">49.99₾</a></li>
+        <li><a class="dropdown-item" href="#">89.99₾</a></li>
+      </ul>
+    </div>
+    <div>
+      <button class="product-addtocart" onclick="addToCart('lightAcademia.webp', 'Light Academia', 'lightAcademia001.html');">Add To Cart</button>
+      <button class="product-buy">Buy</button>
+    </div>
+  </div>
+</div>
+<!--                                         foot bar                                    -->
+<footer class="footer">
+  <div class="footer-content"> StyleMe</div>
+</footer>
+<!--                                         foot bar end                                -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="styleme.js"></script>
+</body>
+</html>
+
